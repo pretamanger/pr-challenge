@@ -5,21 +5,25 @@ import { friendships } from "./data/friendships.js";
  * Mock database call for the purposes of the challenge.
  * No need to review this.
  */
-export function getFriendsForUser(userId: string) {
-  const friends = friendships
-    .map(([userId1, userId2]) => {
-      const isMatchingFriendship = userId === userId1 || userId === userId2;
+export async function getFriendsForUser(userId: string) {
+  return new Promise((resolve) => {
+    const friends = friendships
+      .map(([userId1, userId2]) => {
+        const isMatchingFriendship = userId === userId1 || userId === userId2;
 
-      if (!isMatchingFriendship) {
-        return undefined;
-      }
+        if (!isMatchingFriendship) {
+          return undefined;
+        }
 
-      const friendId = userId === userId1 ? userId2 : userId1;
-      const friend = users.find((user) => user.id === friendId);
+        const friendId = userId === userId1 ? userId2 : userId1;
+        const friend = users.find((user) => user.id === friendId);
 
-      return friend;
-    })
-    .filter((friend) => !!friend);
+        return friend;
+      })
+      .filter((friend) => !!friend);
 
-  return Array.from(new Set(friends));
+    setTimeout(() => {
+      resolve(Array.from(new Set(friends)));
+    }, 500);
+  });
 }

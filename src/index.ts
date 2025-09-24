@@ -6,14 +6,14 @@ const app = express();
 /**
  * Review this route
  */
-app.get("/friends", (req, res) => {
+app.get("/friends", async (req, res) => {
   const { userId } = req.query;
 
   if (typeof userId !== "string") {
     return res.status(400);
   }
 
-  const friends = getFriendsForUser(userId);
+  const friends = await getFriendsForUser(userId);
 
   return res.json(friends);
 });
