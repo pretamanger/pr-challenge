@@ -10,7 +10,8 @@ const app = express();
 app.get("/friends", friendsRoute);
 
 /**
- * Assume this is a third-party API and can't be changed
+ * Ignore this for the purposes of the challenge.
+ * Assume it exists on another server and cannot be changed.
  */
 app.get("/external-friends-service", externalFriendsServiceRoute);
 
