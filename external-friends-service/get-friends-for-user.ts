@@ -1,5 +1,5 @@
-import { users } from "./data/users.js";
-import { friendships } from "./data/friendships.js";
+import { users } from "./users.js";
+import { friendships } from "./friendships.js";
 
 /**
  * Mock database call for the purposes of the challenge.
