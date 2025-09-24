@@ -1,5 +1,13 @@
 # PR Challenge
 
+## Context
+
+Imagine Pret is building a new 'friends' feature on the app, where customers can connect to share loyalty rewards, and more.
+
+Initially the requirement for this API was just to load immediate connections, but now we want to expand the feature so that customers can explore who their friends' friends are, then continue exploring the network of friends, like a social network.
+
+The PR changes the response of the API endpoint so that it now returns a tree structure of friends that will be sent back to the Pret app.
+
 ## Running the API
 
 1. Clone the repository
