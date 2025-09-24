@@ -8,6 +8,8 @@ Initially the requirement for this API was just to load immediate connections, b
 
 The PR changes the response of the API endpoint so that it now returns a tree structure of friends that will be sent back to the Pret app.
 
+Run it locally, see it in action, and review the changes.
+
 ## Running the API
 
 1. Clone the repository

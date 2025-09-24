@@ -24,6 +24,6 @@ export async function getFriendsForUser(userId: string) {
 
     setTimeout(() => {
       resolve(Array.from(new Set(friends)));
-    }, 500);
+    }, 200);
   });
 }
