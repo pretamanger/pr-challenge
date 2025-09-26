@@ -1,4 +1,4 @@
-# PR Challenge
+# Typescript PR Challenge
 
 ## Context
 
@@ -10,6 +10,18 @@ The PR changes the response of the API endpoint so that it now returns a tree st
 
 Run it locally, see it in action, and review the changes.
 
+## Reviewing the PR
+
+Please be prepared to spend ~30 minutes discussing the PR and your feedback during the interview.
+
+Add as much or as little detail as you like. You can use any comments that you write as notes during the discussion.
+
+**NOTE: You do not need to change the code itself. Fixing any issues that you find is not part of the challenge.**
+
+1. [View the changes](https://github.com/pretamanger/pr-challenge/pull/1/files). You will not be able to leave comments directly on this PR.
+1. Clone or download the repository.
+1. Add your review comments to `friends.route.ts`.
+
 ## Running the API
 
 1. Clone the repository
@@ -18,7 +30,3 @@ Run it locally, see it in action, and review the changes.
 4. Run `pnpm start`
 5. Send a `GET` request to `http://localhost:3000/friends?userId=1`
 6. Try changing the user ID in the query
-
-## Reviewing the PR
-
-Add comments in the code to `friends.route.ts`.
