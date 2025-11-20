@@ -30,7 +30,7 @@ class UserControllerTest {
         every { userService.friendTreeBfs(1, 1) } returns UserNode(1, "Jack")
 
         val response = mvc.perform(
-            get("/user?userId=1&depth=1")
+            get("/friends?userId=1&depth=1")
                 .contentType(MediaType.APPLICATION_JSON)
         ).andReturn().response
 
