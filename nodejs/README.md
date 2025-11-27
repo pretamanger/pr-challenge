@@ -16,7 +16,8 @@ Please be prepared to spend ~30 minutes discussing the PR and your feedback duri
 
 Add as much or as little detail as you like. You can use any comments that you write as notes during the discussion.
 
-**NOTE: You do not need to change the code itself. Fixing any issues that you find is not part of the challenge.**
+> [!NOTE]  
+> You do not need to change the code itself. Fixing any issues that you find is not part of the challenge.
 
 1. [View the changes](https://github.com/pretamanger/pr-challenge/pull/1/files). You will not be able to leave comments directly on this PR.
 1. Clone or download the repository.
